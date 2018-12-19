@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">CoChat</string>
+    <string name="tag_chatList">聊天</string>
+    <string name="tag_friendsList">好友</string>
+    <string name="app_personalList">个人中心</string>
+    <string name="app_setingList">设置</string>
+
+</resources>

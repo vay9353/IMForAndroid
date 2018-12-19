@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.parta.mychatapp.MainActivity">
+
+    <!--主页背景-->
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:alpha="0.8"
+        android:background="@drawable/loading"
+        android:scaleType="centerCrop" />
+
+    <!--页面logo-->
+    <ImageView
+        android:layout_width="130dp"
+        android:layout_height="110dp"
+        android:background="@drawable/logo3"
+        android:id="@+id/logoId"
+        android:alpha="0.9"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"/>
+
+    <!--输入用户名的框-->
+    <EditText
+        android:id="@+id/userId"
+        android:layout_width="260dp"
+        android:layout_height="wrap_content"
+        android:hint="user"
+        android:layout_marginTop="60dp"
+        android:textSize="25sp"
+        android:textColor="#333232"
+        android:textColorHint="#8e8d8d"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/logoId"
+        android:drawableLeft="@drawable/user"
+        android:drawablePadding="15dp"
+        android:typeface="sans"/>
+
+    <!--输入密码的框-->
+    <EditText
+        android:id="@+id/pwdId"
+        android:layout_width="260dp"
+        android:layout_height="wrap_content"
+        android:hint="password"
+        android:layout_marginTop="10dp"
+        android:textSize="25sp"
+        android:textColor="#333232"
+        android:textColorHint="#8e8d8d"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/userId"
+        android:drawableLeft="@drawable/pwd"
+        android:drawablePadding="15dp"
+        android:typeface="sans"
+        android:inputType="textPassword"/>
+
+
+    <!--登录按钮-->
+    <Button
+        android:id="@+id/loginId"
+        android:layout_width="260dp"
+        android:layout_height="35dp"
+        android:text="登 录"
+        android:background="@drawable/login_btn_style"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        android:layout_below="@id/pwdId"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:alpha="0.8"
+        android:typeface="sans"/>
+
+    <ProgressBar
+        android:id="@+id/loadBarId"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp"/>
+
+    <!--注册按钮-->
+    <TextView
+        android:id="@+id/registerId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="没有账号？立即创建"
+        android:layout_below="@id/loginId"
+        android:layout_alignEnd="@id/loginId"
+        android:layout_marginTop="10dp"
+        android:typeface="sans"/>
+
+</RelativeLayout>

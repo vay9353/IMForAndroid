@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:fitsSystemWindows="true">
+
+    <EditText
+        android:id="@+id/friendText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="输入想要添加的好友"
+        android:layout_margin="10dp"/>
+
+    <EditText
+        android:id="@+id/reasonText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="输入添加的理由"
+        android:layout_margin="10dp" />
+
+    <Button
+        android:id="@+id/sendRequestButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="发送好友请求"
+        android:background="#0397e7"
+        android:textColor="#FFFFFF"
+        android:layout_margin="10dp"
+        android:padding="0dp"
+        android:typeface="sans"/>
+
+</LinearLayout>

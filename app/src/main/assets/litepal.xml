@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<litepal>
+    <dbname value="Userdb.db" ></dbname>
+    <version value="6"></version>
+    <list>
+        <mapping class="com.parta.mychatapp.DataBaseBean.User"></mapping>
+        <mapping class="com.parta.mychatapp.DataBaseBean.UserFriends"></mapping>
+    </list>
+</litepal>

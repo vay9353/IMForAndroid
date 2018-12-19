@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:background="#e6e2e3">
+
+        <TextView
+            android:id="@+id/text"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="注 册"
+            android:background= "#0397e7"
+            android:textColor="#FFFFFF"
+            android:gravity="center"
+            android:textSize="20sp"
+            android:typeface="sans"/>
+
+        <!--输入用户名的框-->
+        <EditText
+            android:id="@+id/userId"
+            android:layout_width="260dp"
+            android:layout_height="wrap_content"
+            android:hint="user"
+            android:layout_marginTop="60dp"
+            android:textSize="25sp"
+            android:textColor="#2b2b2b"
+            android:textColorHint="#bfbbbb"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/text"
+            android:drawableLeft="@drawable/user"
+            android:drawablePadding="15dp"
+            android:typeface="sans"/>
+
+        <!--输入密码的框-->
+        <EditText
+            android:id="@+id/pwdId"
+            android:layout_width="260dp"
+            android:layout_height="wrap_content"
+            android:hint="password"
+            android:layout_marginTop="10dp"
+            android:textSize="25sp"
+            android:textColor="#2b2b2b"
+            android:textColorHint="#bfbbbb"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/userId"
+            android:drawableLeft="@drawable/pwd"
+            android:drawablePadding="15dp"
+            android:typeface="sans"
+            android:inputType="textPassword"/>
+
+        <!--输入密码的框-->
+        <EditText
+            android:id="@+id/pwd2Id"
+            android:layout_width="260dp"
+            android:layout_height="wrap_content"
+            android:hint="password"
+            android:layout_marginTop="10dp"
+            android:textSize="25sp"
+            android:textColor="#2b2b2b"
+            android:textColorHint="#bfbbbb"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/pwdId"
+            android:drawableLeft="@drawable/pwd"
+            android:drawablePadding="15dp"
+            android:typeface="sans"
+            android:inputType="textPassword"/>
+
+        <!--提交按钮-->
+        <Button
+            android:id="@+id/submitId"
+            android:layout_width="260dp"
+            android:layout_height="35dp"
+            android:text="提 交"
+            android:background="@drawable/login_btn_style"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp"
+            android:layout_below="@id/pwd2Id"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"
+            android:typeface="sans"/>
+
+        <!--登录按钮-->
+        <TextView
+            android:id="@+id/loginId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/submitId"
+            android:layout_alignEnd="@id/submitId"
+            android:layout_marginTop="10dp"
+            android:textColor="#00a3cf"
+            android:typeface="sans"/>
+
+</RelativeLayout>

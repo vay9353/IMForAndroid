@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/loadingmoon">
+    <TextView
+        android:layout_width="100dp"
+        android:layout_height="30dp"
+        android:textColor="#ded8d8"
+        android:text=" Vay | 技术支持 "
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"/>
+</RelativeLayout>
